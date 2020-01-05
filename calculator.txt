@@ -1,0 +1,79 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	float first,second,result;
+	int a,b=10499,option;
+	printf("HI,\n I Am Your Personal Assistant For Calculating Arithmatic Operations...(write password to access 10499 !)\n");
+	scanf("%d",&a);
+	if(b==a)
+	{
+	system("cls");
+	printf("Which Operation You Want To Perform ?\n");
+	printf("There are some operations:-\n1 ADDITION\n2 SUBTRACTION\n3 MULTIPLY\n4 DIVIDE\n5 SQUARE ROOT\n");
+	
+	scanf("%d",&option);
+	switch (option)
+	{	
+		case 1:
+		{
+			system("cls");
+			printf("ADDITION\n");
+			printf("ENTER TWO NUMBER!\n");
+			scanf("%f%f",&first,&second);
+			result=first+second;
+			printf("%f + %f = %f\n",first,second,result);
+			break;
+		}
+		case 2:
+		{
+			system("cls");
+			printf("SUBTRACTION\n");
+			printf("ENTER TWO NUMBER!\n");
+			scanf("%f%f",&first,&second);
+			result=first-second;
+			printf("%f - %f = %f\n",first,second,result);
+			break;
+		}
+		case 3:
+		{
+			system("cls");
+			printf("MULTIPLICATION\n");
+			printf("ENTER TWO NUMBER!\n");
+			scanf("%f%f",&first,&second);
+			result=first*second;
+			printf("%f * %f = %f\n",first,second,result);
+			break;
+		}
+		case 4:
+		{
+			system("cls");
+			printf("DIVIDE\n");
+			printf("ENTER TWO NUMBER!\n");
+			scanf("%f%f",&first,&second);
+			result=first/second;
+			printf("%f / %f = %f\n",first,second,result);
+			break;
+		}
+		case 5:
+		{
+			system("cls");
+			printf("SQUARE ROOT\n");
+			printf("ENTER One NUMBER!\n");
+			scanf("%f",&first);
+			result=first*first;
+			printf("(%f)^2 = %f\n",first,result);
+			break;
+		}
+		default:
+		{
+			printf("YOU ENTER INVALID OPTION !\n");
+			break;
+		}	
+	}
+	}
+	else
+	printf("She Only Accept This Password To Access !\n");
+	
+	return 0;
+}
